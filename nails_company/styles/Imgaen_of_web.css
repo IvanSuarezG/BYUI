@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Gochi+Hand&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #fdc02f ;
+  --secondary-color: #4eaede ;
+  --accent1-color: #393a34;
+  --accent2-color: #76807c;
+
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Cookie";
+  --paragraph-font: Cookie, Helvetica, sans-serif;
+  
+  --nav-link-color: #780000;
+	--nav-background-color: #ffafcc;
+	--nav-hover-link-color: #780000;
+	--nav-hover-background-color: #4eaede;
+}
+body {
+  text-align: center;
+}
+nav {
+    background-color: var(--nav-background-color);
+    padding: 20px;
+    text-align: center;
+		font-size: 4em;
+  }
+  nav {
+		list-style-type: none;
+		display: flex;
+	}
+		nav a {
+		padding:1em;
+		min-width: 120px;
+		text-decoration: none;
+		padding: 10px;
+		}
+		nav a:link, nav a:visited {
+		color: var(--nav-link-color);
+	}
+  a {
+    color: red;
+    margin: 60px;
+    font-family: var(--paragraph-font);
+  }
+  h1 {
+    padding: 1em;
+		font-size: 80px;
+    color: #780000;
+    font-family: var(--heading-font);
+  }
