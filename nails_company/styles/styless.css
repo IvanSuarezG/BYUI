@@ -1,0 +1,10 @@
+
+body{
+    text-align: center;
+    display: inline;
+}
+#background{
+    background-color: darkgreen;
+    height: 100px;
+    max-width:2000px
+}
