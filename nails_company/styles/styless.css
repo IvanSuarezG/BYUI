@@ -2,9 +2,30 @@
 body{
     text-align: center;
     display: inline;
+    font-size: 32px;
 }
 #background{
     background-color: darkgreen;
     height: 100px;
     max-width:2000px
+}
+
+p{
+    text-align:center;
+    width:800px;
+    margin:0 auto;
+    
+}
+
+#background{
+    width: 1em;
+    display:block;
+    margin: 10px;;
+    border: 2px solid pink;
+}
+
+nav{
+    text-align:center;
+    width:800px;
+    margin:0 auto;   
 }
