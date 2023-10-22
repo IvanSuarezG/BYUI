@@ -1,13 +1,12 @@
 
-body{
-    text-align: center;
-    display: inline;
-    font-size: 32px;
-}
 #background{
     background-color: darkgreen;
     height: 100px;
     max-width:2000px
+}
+
+h1{
+    background-color: whitesmoke;
 }
 
 p{
@@ -28,4 +27,16 @@ nav{
     text-align:center;
     width:800px;
     margin:0 auto;   
+}
+
+.slogan{
+    text-align: right;
+    display:inline-block;
+    padding: 80px;
+    margin: 30px;
+    border:5px solid black;
+}
+
+#Logo{
+    display:block;
 }

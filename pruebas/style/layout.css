@@ -1,0 +1,7 @@
+
+.flex-container{
+    display:flex;
+    align-items: center;
+    font-size: 10em;
+    float:left;
+}
