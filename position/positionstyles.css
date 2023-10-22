@@ -8,10 +8,6 @@
   gap:20px;
 
 }
-
-div{
-
-}
 .red1 { 
   width: 100%; 
   height: 100px; 
@@ -157,9 +153,6 @@ div{
   grid-row: 2/3;
   float: left;
   padding: .5em;
-  
-  
-
 } 
 .yellow5 {
   width: 100%; 
