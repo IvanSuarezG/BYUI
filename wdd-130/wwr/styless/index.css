@@ -1,33 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Englebert&family=Sedgwick+Ave+Display&display=swap');
+
 
 body{
     background-color: white;
+    font-family: Englebert,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header{
     background-color: white;
     color: #D4AC0D;
+    
+    
 }
 nav a{
     background-color: #393a34;
     color: #D4AC0D;
     text-align: center;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 2.5em;
+    display: inline-block;
+    padding: 35px;
+    
 }
 nav a:hover{
     background-color: #393a34;
     color: #D4AC0D;
+    
+    
 }
 main section{
-    text-align: center;
+    text-align: center; 
+}
+
+main section img {
+    box-sizing: border-box;
 }
 footer{
     background-color: #393a34;
     color: #D4AC0D;
+    font-family: Sedgwick Ave Display,Arial, Helvetica, sans-serif;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a{
     background-color: #393a34;
     color: #D4AC0D;
     text-decoration: none;
+    font-family: Sedgwick Ave Display,Arial, Helvetica, sans-serif
+    
 }
 footer p a:hover{
     background-color: #393a34;
@@ -35,11 +57,15 @@ footer p a:hover{
     text-decoration: underline;
 }
 footer p {
-    font-size: 1.5em;
+    font-size: 2em;
+    font-family: Sedgwick Ave Display,Arial, Helvetica, sans-serif
 }    
 h2, h4{
     background-color: white;
     color: #D4AC0D;
+    font-family: Englebert,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    margin: 0;
+    padding: 0;
 }
 #content {
     max-width: 1600px;
@@ -48,6 +74,8 @@ h2, h4{
 }
 #hero-msg h1,h4{
     text-align: center;
+    font-family: Englebert,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 3em;
 }
 #hero-img{
     display:inline-block;
@@ -58,6 +86,10 @@ h2, h4{
     background-color: #76807c;
     color: #D4AC0D;
 }
+#logo_link{
+    width: 150px;
+    padding-top: 5px;
+}
 .botton-box{
     text-align: center;
 }
@@ -65,11 +97,19 @@ h2, h4{
     background-color: #393a34;
     color: #D4AC0D;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .join{
     background-color: #393a34;
     color: #D4AC0D;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover{
     background-color: #393a34;
@@ -82,29 +122,59 @@ h2, h4{
 .msg{
     background-color: #393a34;
     color: #D4AC0D;
+    padding: 35px;
 }
 .msg h2{
     background-color: #393a34;
     color: #D4AC0D;
+  
 }
 .home-title{
     background-color: #393a34;
     color: #D4AC0D;
+    font-family: Sedgwick Ave Display,Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 .home-grid{
     color: #D4AC0D;
+    font-size: 2em;
+    font-family: Sedgwick Ave Display,Arial, Helvetica, sans-serif
+    
 }
 .msg p{
     background-color: #393a34;
     color: #D4AC0D;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding-bottom: 15px;
 }
 .icon{
     width:80px;
-}
-.logo_link{
-    width: 150px;
+    padding-top: 10px;
 }
 .social_logo{
     width: 100px;
 }
-
+.social img{
+    padding-top: 15px;
+}
+.social{
+    padding-top: 15px;
+}
+.rivers-card{
+    margin: 200px 0;
+}
+.camping-card{
+    margin: 200px 0;
+}
+.rapids-card{
+    margin: 200px 0;
+}
+.join{
+    font-size: 1.5em;
+    color: #396E94;
+}
+.card-img{
+    border: 10px solid black;
+}
