@@ -8,37 +8,172 @@ body{
     margin: 0;
     padding: 0;
 }
+main section{
+    text-align: center; 
+}
+main section img {
+    box-sizing: border-box;
+}
 header{
-    background-color: white;
-    color: #D4AC0D;
+    display:grid;
+    grid-template-columns: auto auto;
+}
+.header{
     display: grid;
-    grid-template-columns: 150px auto; 
+    justify-content: center;
+    align-content: end;
+}
+#logo_link{
+    grid-column: 1/2;
+    padding-top: 5px;
+    justify-items: end;
+    align-self: flex-start;
+}
+.logo_link{
+    width: 100px;
+    height: 100px;
+    margin-top: 5%;
+    margin-left: 500px;
 }
 nav{
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content:space-evenly;
+    align-items: flex-end;
+    margin-top: 5%;
 }
 nav a{
     background-color: #393a34;
     color: #D4AC0D;
     text-align: center;
     text-decoration: none;
-    font-size: 2.5em;
+    font-size: 2em;
     display: inline-block;
-    padding: 35px;    
+    padding: 25px;
+    border-radius: 10%;    
 }
-nav a:hover{
+
+#hero{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+    justify-items: center;
+}
+#hero-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero-img{
+    display:inline-block;
+    width: 1500px;
+}
+.botton-box{
+    text-align: center;
+    
+}
+.book{
     background-color: #393a34;
     color: #D4AC0D;
-    
+    text-decoration: none;
+    font-size: 30px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    justify-content: center;
+}
+.home-title{
+    background-color: #393a34;
+    color: #D4AC0D;
+    width: 2000px;
+    font-family: Sedgwick Ave Display,Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    text-align: center;
+}
+h1, h4{
+    background-color: white;
+    color: #D4AC0D;
+    font-family: Englebert,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 3em;
+    text-align: center;
+}
+.home-grid{
+    color: #D4AC0D;
+    font-size: 2em;
+    font-family: Sedgwick Ave Display,Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.rivers-card{
+    margin: 200px 0;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.camping-card{
+    margin: 200px 0;
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+.rapids-card{
+    margin: 200px 0;
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+.card-img{
+    border: 10px solid black;
+    width: 100%;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #393a34;
+}
+.card-img:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+.icon{
+    width:80px;
+    padding-top: 10px;
+    padding-left: 150px;
+}
+.camping-card h2{
+    text-align: center;
+}
+.msg{
+    display: flex;
+}
+.msg h2 h4{
+    background-color: #393a34;
+    color: #D4AC0D;
+    font-size: 1em;
+}
+.msg p{
+    background-color: #393a34;
+    color: #D4AC0D;
+    font-size: 2em;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+    align-self: stretch;
     
 }
-main section{
-    text-align: center; 
+.mountains{
+    align-self: left;
+    width: 50%;
 }
-main section img {
-    box-sizing: border-box;
+.subtitle{
+    text-align: center;
+    color: #D4AC0D;
+    background-color: white;
+    font-size: 4em;
+}
+.join{
+    font-size: 4em;
+    color: #396E94;
+}
+.book:hover{
+    background-color: #393a34;
+    color: #D4AC0D;
+}
+.join:hover{
+    background-color: #393a34;
+    color: #D4AC0D;
 }
 footer{
     background-color: #393a34;
@@ -66,123 +201,6 @@ footer p {
     font-size: 2em;
     font-family: Sedgwick Ave Display,Arial, Helvetica, sans-serif
 }    
-h1, h4{
-    background-color: white;
-    color: #D4AC0D;
-    font-family: Englebert,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-    margin: 0;
-    padding: 0;
-    font-size: 4em;
-}
-#content {
-    max-width: 1600px;
-    text-align: left;
-    margin: 0 auto;
-}
-#hero{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px;
-}
-#hero-box{
-    grid-column: 1/4;
-    grid-row: 1/3;
-    z-index: -1;
-}
-#hero-msg h1 h4{
-    text-align: center;
-    font-family: Englebert,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-    font-size: 5em;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin-top: -100px;
-    
-    
-}
-#hero-img{
-    display:inline-block;
-    width: 800px;
-    margin-top: 100px;
-}
-#background{
-    height: 725px;
-    background-color: #76807c;
-    color: #D4AC0D;
-    grid-column: 1/11;
-    grid-row: 4/9;
-}
-#logo_link{
-    width: 100px;
-    padding-top: 5px;
-    justify-self: center;
-    align-self: center;
-}
-.botton-box{
-    text-align: center;
-}
-.book{
-    background-color: #393a34;
-    color: #D4AC0D;
-    text-decoration: none;
-    font-size: 30px;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
-}
-.join{
-    background-color: #393a34;
-    color: #D4AC0D;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
-}
-.book:hover{
-    background-color: #393a34;
-    color: #D4AC0D;
-}
-.join:hover{
-    background-color: #393a34;
-    color: #D4AC0D;
-}
-.msg{
-    background-color: #393a34;
-    color: #D4AC0D;
-    padding: 35px;
-    grid-column: 6/10;
-    grid-row: 6/7;
-    box-shadow: 5px 5px 10px #393a34;
-}
-.msg h2 h4{
-    background-color: #393a34;
-    color: #D4AC0D;
-}
-.home-title{
-    background-color: #393a34;
-    color: #D4AC0D;
-    font-family: Sedgwick Ave Display,Arial, Helvetica, sans-serif;
-    font-size: 5em;
-    margin-top: 10px;
-}
-.home-grid{
-    color: #D4AC0D;
-    font-size: 2em;
-    font-family: Sedgwick Ave Display,Arial, Helvetica, sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-.msg p{
-    background-color: #393a34;
-    color: #D4AC0D;
-    font-size: 1.5em;
-    line-height: 1.5em;
-    padding-bottom: 15px;
-}
-.icon{
-    width:80px;
-    padding-top: 10px;
-}
 .social_logo{
     width: 100px;
 }
@@ -191,81 +209,4 @@ h1, h4{
 }
 .social{
     padding-top: 15px;
-}
-.rivers-card{
-    margin: 200px 0;
-    grid-column: 2/4;
-    grid-row: 2/3;
-}
-.camping-card{
-    margin: 200px 0;
-    grid-column: 5/7;
-    grid-row: 2/3;
-}
-.rapids-card{
-    margin: 200px 0;
-    grid-column: 8/10;
-    grid-row: 2/3;
-}
-.join{
-    font-size: 1.5em;
-    color: #396E94;
-}
-.card-img{
-    border: 10px solid black;
-    width: 100%;
-    transition: transform .5s;
-    box-shadow: 5px 5px 10px #393a34;
-}
-.card-img:hover{
-    opacity: .6;
-    transform: scale(1.1);
-}
-.mountains{
-    width: 100%;
-    grid-column: 2/7;
-    grid-row: 5/8;
-    box-shadow: 5px 5px 10px #393a34;
-}
-
-@media screen and (max-width: 900px) {
-    #hero, .home-grid {
-        display: block;
-        height: auto;
-    }
-    nav, footer {
-        flex-direction: column;
-    }
-    nav a {
-        display: block;
-        padding: 15px;
-    }
-    #hero {
-        margin-top: 0;
-    }
-    #hero-msg {
-        margin-top: 0;
-    }
-    #hero-msg h4 {
-        display: none;
-    }
-    .home-title {
-        font-size: 25px;
-        color: #6f7364;
-    }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
-    }
-    #background {
-        display: none;
-    }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
-    footer {
-        margin-top: 25px;
-    }
 }
