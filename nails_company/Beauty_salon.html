@@ -2,86 +2,228 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=5">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nails_company</title>
     <link rel="stylesheet" href="styles/Beauty_salon.css"/>
 </head>
 <body>
     <header>
+        <div class="header">
+            <img class="logo_link" src="pictures/Logo.jpg" alt="Dry Oar Logo">
+        </div>
         <nav>
             <a href="Home.html">Home</a>
             <a href="Cosmetic_store.html">Cosmetic Store</a>
             <a href="Beauty_salon.html">Set Appointment</a>
         </nav>
-        <h1>Option of Services</h1>
-        <h1>Hair</h1>
-        <div class="service_hair">
-            <h2 id="title_1">Keratin Treatment</h2>
-            <h2 id="title_2">HairStyles</h2>
-            <h2 id="title_3">Haircut</h2>
-            <p id="info_1">Keratin treatments prove to be an easy way to deal with dull, dry and frizzy hair and make them smooth and shiny. </p>
-            <p id="info_2">braids, Fringe, curls, buns</p>
-            <p id="info_3">pixie cut, typical Bob, Side Swept Bangs, Stacking Crop, Shag, Blunt Lob</p>
-            <img class="image_1" src="pictures/Keratin.png" alt="keratina">
-            <img class="image_2" src="pictures/HairStyles.jpg" alt="hair_styles">
-            <img class="image_3" src="pictures/hair_cut.jpg" alt="hair_cut">
+    </header>
+    <img class="beauty-Salon" src="pictures/nails-oxford.jpg">
+    
+    <div class="main">
+
+        <h1>SERVICES</h1>
+        <hr>
+        
+        
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('Hair')">Hair</button>
+          <button class="btn" onclick="filterSelection('nails')"> Nails</button>
+          <button class="btn" onclick="filterSelection('eyes')"> Eyes</button>
         </div>
-        <nav>
-            <a href="Set appointment">Set an appointment</a>
-        </nav>
-        <h1>Nails</h1>
-        <div class="services_nails">
-            <h2 id="title_4">Traditional manicure</h2>
-            <h2 id="title_5">Pedicure</h2>
-            <h2 id="title_6">semi-permanent</h2>
-            <h2 id="title_7">Acrylic</h2>
-            <h2 id="title_8">Press on</h2>
-            <h2 id="title_9">PolyGel</h2>
-            <p id="info_4">Consists of filing and shaping the free edge of nails, pushing and clipping any nonliving tissue, 
-                           treatments with various liquids, massage of the hand, and the application of fingernail polish. </p>
-            <p id="info_5">Cosmetic treatment of the feet and toenails, analogous to a manicure. During a pedicure, dead 
-                           skin cells are rubbed off the bottom of the feet using a rough stone. Skincare is often provided
-                            up to the knee, including granular exfoliation, moisturizing, and massage.</p>
-            <p id="info_6">Polish is a photo-hardening gel, a longer-lasting polish, compared to traditional air-drying nail polish. 
-                           It dries by holding your client's nails for a few seconds under a special ultraviolet lamp.</p>
-            <p id="info_7">Are a combination of a liquid monomer and a powder polymer that form a paste which is bonded to the natural nail. 
-                           It's then given the desired shape, where it hardens in place to add strength, length, and thickness to the nail.</p>
-            <p id="info_8">Are artificial acrylic nails that have already been made up ready to stick to the natural nail. Depending on the quality 
-                           of the nail, they can last up to 2 weeks on the nail. If applied correctly, they can look and feel just like acrylic nails.</p>
-            <p id="info_9">Is a hybrid nail polish formula originally created for nail technicians.It offers the best qualities of acrylics and gel nails. 
-                           Essentially, it's a nail enhancement made with acrylic powder and clear gel that can be used to give you the perfect set</p>
-            <img class="image_4" src="pictures/manicure_traditional.jpg" alt="manicure_traditional">
-            <img class="image_5" src="pictures/pedicure.jpg" alt="pedicure">
-            <img class="image_6" src="pictures/semipermanente.jpg" alt="semipermanente">
-            <img class="image_7" src="pictures/acrilicas.jpg" alt="acrilicas">
-            <img class="image_8" src="pictures/press_on.png" alt="press_on">
-            <img class="image_9" src="pictures/polygel.jpg" alt="polygel">
+        
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column Hair">
+            <div class="content">
+              <img src="pictures/keratina.jpeg" alt="Keratin" style="width:100%">
+              <h4>Keratin</h4>
+              <p>$ 40.50</p>
+              <a class="btn" href="appointment.html">Set Appointment</a>
+            </div>
+          </div>
+          <div class="column Hair">
+            <div class="content">
+            <img src="pictures/HairStyles.jpg" alt="Styles" style="width:100%">
+              <h4>Hair Styles</h4>
+              <p>$15.00</p>
+              <a class="btn" href="appointment.html">Set Appointment</a>
+            </div>
+          </div>
+          <div class="column Hair">
+            <div class="content">
+            <img src="pictures/hair_cut.jpg" alt="hair_cut" style="width:100%">
+              <h4>Hair Cut</h4>
+              <p>$15.00</p>
+              <a class="btn" href="appointment.html">Set Appointment</a>
+            </div>
+          </div>
+          
+          <div class="column nails">
+            <div class="content">
+              <img src="pictures/manicure-with-burgundy-gel-nail-polish.jpg" alt="manicure" style="width:100%">
+              <h4>Manicure</h4>
+              <p>$25.00</p>
+              <a class="btn" href="appointment.html">Set Appointment</a>
+            </div>
+          </div>
+          <div class="column nails">
+            <div class="content">
+            <img src="pictures/pedicure.jpg" alt="Pedicure" style="width:90%">
+              <h4>Pedicure</h4>
+              <p>$28.00</p>
+              <a class="btn" href="appointment.html">Set Appointment</a>
+            </div>
+          </div>
+          <div class="column nails">
+            <div class="content">
+            <img src="pictures/semipermanente.jpg" alt="Semipermanent" style="width:80%">
+              <h4>Semipermanent</h4>
+              <p>$60.00</p>
+              <a class="btn" href="appointment.html">Set Appointment</a>
+            </div>
+          </div>
+          <div class="column nails">
+            <div class="content">
+              <img src="pictures/acrilicas.jpg" alt="Acrilycs" style="width:100%">
+              <h4>Acrilycs</h4>
+              <p>$120.00</p>
+              <a class="btn" href="appointment.html">Set Appointment</a>
+            </div>
+          </div>
+          <div class="column nails">
+            <div class="content">
+            <img src="pictures/press-on.jpg" alt="Press-on" style="width: 100%">
+              <h4>Press-on</h4>
+              <p>$90.00</p>
+              <a class="btn" href="appointment.html">Set Appointment</a>
+            </div>
+          </div>
+          <div class="column nails">
+            <div class="content">
+            <img src="pictures/polygel.jpg" alt="Car" style="width:100%">
+              <h4>Polygel</h4>
+              <p>$100.00</p>
+              <a class="btn" href="appointment.html">Set Appointment</a>
+            </div>
+          </div>
+
+          <div class="column eyes">
+            <div class="content">
+            <img src="pictures/hair-by-hair.jpg" alt="Press-on" style="width: 100%">
+              <h4>Hair by Hair Eyelashes</h4>
+              <p>$130.00</p>
+              <a class="btn" href="appointment.html">Set Appointment</a>
+            </div>
+          </div>
+          <div class="column eyes">
+            <div class="content">
+            <img src="pictures/lifting_pestañas.jpeg" alt="lifting" style="width:90%">
+              <h4>Lifting</h4>
+              <p>$100.00</p>
+              <a class="btn" href="appointment.html">Set Appointment</a>
+            </div>
+          </div>
+          <div class="column eyes">
+            <div class="content">
+            <img src="pictures/lifting.jpg" alt="lifting" style="width:100%">
+              <h4>Laminado</h4>
+              <p>$100.00</p>
+              <a class="btn" href="appointment.html">Set Appointment</a>
+            </div>
+          </div>
+        <!-- END GRID -->
         </div>
-        <nav>
-            <a href="Set appointment">Set an appointment</a>
-        </nav>
-        <h1>Eyebrows and EyeLashes</h1>
-        <div class="services_eye">
-            <h2 id="title_10">Hair by hair eyelashes</h2>
-            <h2 id="title_11">Lifting</h2>
-            <p id="info_10">Is a very effective technique for instant lengthening and thickening of the eyelashes. The system 
-                            works with a wide range of hair textures and sizes, that can be combined for looks that run the gamut 
-                            subtle and natural to trendy and glamorous.</p>
-            <p id="info_11">Is a semi-permanent lift and curl of your natural lashes, much like a perm. By bending your natural 
-                            lashes over a curved silicone shield and applying a perming solution, a lash technician can set the 
-                            shape of your natural lashes into an upward and realistic curl.</p>
-            <img class="image_10" src="pictures/pestaña_pelo_a_pelo.jpg" alt="pestaña_pelo_a_pelo">
-            <img class="image_11" src="pictures/lifting_pestañas.jpeg" alt="lifting_pestañas">
+        
+        <!-- END MAIN -->
         </div>
-        <nav>
-            <a href="Set appointment">Set an appointment</a>
-        </nav>
+
+        
+        <script>
+         /* Code to show the services for Hair*/   
+        filterSelection("Hair")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        /* Code to show the services for Nails*/   
+        filterSelection("nails")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        /* Code to show the services for eyes*/  
+        filterSelection("eyes")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        /* Code to show all services*/   
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
         <footer>
             <div class="two_section">
             <p class="Name_section"> Contact Us</p>
-            <p id="Phone">Phone Number: 123 456 7890</p>
-            <p id="email">Email: tottiandbella@gmail.com</p>
-            <p id="Address">Address: Calle 1 # 23-34 agbalumo</p>
+            <p>Phone Number: 123 456 7890</p>
+            <p>Email: tottiandbella@gmail.com</p>
+            <p>Address: Calle 1 # 23-34</p>
             </div>
             <div class="social">
                 <a href="https://facebook.com">
@@ -95,6 +237,5 @@
                 </a>
             </div>
         </footer>
-    </header>
   
 </body>

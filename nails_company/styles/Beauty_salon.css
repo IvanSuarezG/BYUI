@@ -1,338 +1,168 @@
-nav {
-    background-color: #ccd5ae;
-    line-height: 3em;
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100&family=Sedgwick+Ave&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
     text-align: center;
-    font-size: 1.2em;
-  }
-  nav  {
-    list-style-type: none;
+    font-family:Sedgwick Ave,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    position:absolute;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+
+}
+nav{
     display: flex;
-  
-  }
-  nav a {
-    padding:1em;
-    min-width: 120px;
-    text-decoration: none;
-    padding: 10px;
-  
-  }
-  nav a:link, nav a:visited {
-    color:#99582a;
-  }
-  nav a:hover {
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    background-color: #ccd5ae;
     color: #99582a;
-    background-color: #faedcd;
+    text-align: center;
+    font-size: 2.5em;
+    text-decoration: none;
+    margin: 0 55px;
+    transition: 0.7s;
+    padding: 10px;
+    border-radius: 30px;
+    
+}
+nav a:hover {
+    color: #99582a;
+    background-color: #fbc4ab;
+    padding: 15px;
+    border-radius: 20px;
+}
+#logo_link{
+    grid-column: 1/2;
+    padding-top: 5px;
+    justify-items: end;
+    align-self: flex-start  ;
+}
+.logo_link{
+    width: 200px;
+    height: 200px;
+}
+.beauty-Salon{
+    position: relative;
+    width:1300px;
+}
+/* Center website */
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+    color:#ccd5ae;
+}
+h2{
+    font-size: 3em;
+    color: #ccd5ae;
+
+}
+.row {
+    margin: 8px -16px;
+}
+
+  /* Add padding BETWEEN each column*/
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+/* Add padding BETWEEN each column (if you want) */
+.column h4{
+    color:#99582a;
+    font-size: 2em;
+}
+.column p{
+    color:#99582a;
+    font-size: 2.5em;
+    font-family:Playpen Sans,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
-  h1{
-    text-align: center;
-  }
-
-.service_hair{
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 50px 1fr 1fr;
-    justify-content: center;
-
+/* Content */
+.content {
+    background-color:#ccd5ae;
+    padding: 10px;
 }
-
-#title_1{
-    text-align: center;
-    grid-column: 1/2;
-    justify-items: center;
-    align-items: center;
-    row-gap: 0;
+  
+  /* The "show" class is added to the filtered elements */
+.show {
+    display: block;
 }
-#title_2{
-        text-align: center;
-        grid-column: 2/3;
-        justify-items: center;
-        align-items: center;
-        row-gap: 0;
+  
+  /* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color:#ccd5ae;
+    color:#99582a;
+    font-size: 1.5em;
+    font-family:Playpen Sans,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#title_3{
-        text-align: center;
-        grid-column: 3/4;
-        justify-items: center;
-        align-items: center;
-        row-gap: 0;
+.btn:hover {
+    color: #99582a;
+    background-color: #fbc4ab;
 }
-.image_1{
-    width: 100%;
-    height: 100%;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    justify-items: start;
-}
-.image_2{
-    width: 100%;
-    height: 100%;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    justify-items: center;
-}
-.image_3{
-    width: 100%;
-    height: 100%;
-    grid-column: 3/4;
-    grid-row: 2/3;
-    justify-items: center;
-    align-items: start;
-    row-gap: 0;
-}
-#info_1{
-    padding: 2em;
-    justify-items: center;
-    text-align: justify;
-    grid-column: 1/2;
-    grid-row:3/4;
-}
-#info_2{
-    padding: 2em;
-    justify-items: end;
-    text-align: center;
-    grid-column: 2/3;
-    grid-row:3/4;
-}
-#info_3{
-    padding: 2em;
-    justify-items: end;
-    text-align: justify;
-    grid-column: 3/4;
-    grid-row:3/4;
-}
-
-.services_nails{
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 70px 1fr 200px 70px 1fr 1fr;
-    justify-content: center;
-}
-
-#title_4{
-    text-align: center;
-    grid-column: 1/2;
-    justify-items: center;
-    align-items: center;
-    row-gap: 0;
-}
-#title_5{
-    text-align: center;
-    grid-column: 2/3;
-    justify-items: center;
-    align-items: center;
-    row-gap: 0;
-}
-#title_6{
-    text-align: center;
-    grid-column: 3/4;
-    justify-items: center;
-    align-items: center;
-    row-gap: 0;
-}
-#title_7{
-    text-align: center;
-    grid-column: 1/2;
-    grid-row: 4/5;
-    justify-items: center;
-    align-items: center;
-    row-gap: 0;
-}
-#title_8{
-    text-align: center;
-    grid-column: 2/3;
-    grid-row: 4/5;
-    justify-items: center;
-    align-items: center;
-    row-gap: 0;
-}
-#title_9{
-    text-align: center;
-    grid-column: 3/4;
-    grid-row: 4/5;
-    justify-items: center;
-    align-items: center;
-    row-gap: 0;
-}
-
-.image_4{
-    width: 100%;
-    height: 100%;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    justify-items: start;
-}
-.image_5{
-    width: 100%;
-    height: 100%;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    justify-items: center;
-}
-.image_6{
-    width: 100%;
-    height: 100%;
-    grid-column: 3/4;
-    grid-row: 2/3;
-    justify-items: center;
-    align-items: start;
-    row-gap: 0;
-}
-.image_7{
-    width: 100%;
-    height: 100%;
-    grid-column: 1/2;
-    grid-row: 5/6;
-    justify-items: start;
-}
-.image_8{
-    width: 100%;
-    height: 100%;
-    grid-column: 2/3;
-    grid-row: 5/6;
-    justify-items: start;
-}
-.image_9{
-    width: 100%;
-    height: 100%;
-    grid-column: 3/4;
-    grid-row: 5/6;
-    justify-items: start;
-}
-#info_4{
-    padding: 2em;
-    justify-items: center;
-    text-align: justify;
-    grid-column: 1/2;
-    grid-row:3/4;
-}
-#info_5{
-    padding: 2em;
-    justify-items: end;
-    text-align: justify;
-    grid-column: 2/3;
-    grid-row:3/4;
-}
-#info_6{
-    padding: 2em;
-    justify-items: end;
-    text-align: justify;
-    grid-column: 3/4;
-    grid-row:3/4;
-}
-#info_7{
-    padding: 2em;
-    justify-items: end;
-    text-align: justify;
-    grid-column: 1/2;
-    grid-row:6/7;
-}
-#info_8{
-    padding: 2em;
-    justify-items: end;
-    text-align: justify;
-    grid-column: 2/3;
-    grid-row:6/7;
-}
-#info_9{
-    padding: 2em;
-    justify-items: end;
-    text-align: justify;
-    grid-column: 3/4;
-    grid-row:6/7;
-}
-.services_eye{
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 70px 1fr 10px;
-    justify-content:space-around;
-}
-#title_10{
-    text-align: center;
-    grid-column: 1/2;
-    justify-items: center;
-    align-items: center;
-    row-gap: 0;
-}
-#title_11{
-    text-align: center;
-    grid-column: 2/3;
-    justify-items: center;
-    align-items: center;
-    row-gap: 0;
-}
-.image_10{
-    width: 100%;
-    height: 100%;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    justify-items: center;
-    align-items: start;
-    row-gap: 0;
-}
-.image_11{
-    width: 100%;
-    height: 100%;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    justify-items: start;
-}
-#info_10{
-    padding: 2em;
-    justify-items: end;
-    text-align: justify;
-    grid-column: 1/2;
-    grid-row:5/6;
-}
-#info_11{
-    padding: 2em;
-    justify-items: end;
-    text-align: justify;
-    grid-column: 2/3;
-    grid-row:5/6;
-}
-.two_section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-.social_logo{
-    width: 100px;
-    height: 100px;
+/* Add a dark background color to the active button */
+.btn.active {
+    background-color: #fbc4ab;
+     color: #99582a;
 }
 footer{
-    background-color:#ccd5ae;
-}
-
-.two_section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-
-#Name_section{
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-#Phone{
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-#email{
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-#Address{
-    grid-column: 1/2;
-    grid-row: 4/5;
-}
-
-.social{
+    background-color: #393a34;
+    color: #4eaede;
+    font-family: Sedgwick Ave Display,Arial, Helvetica, sans-serif;
     display:flex;
+    justify-content: space-around;
+    align-items: left;
+    padding: 3em;
+}
+footer a{
+    background-color: #393a34;
+    color: #4eaede;
+    text-decoration: none;
+    font-family: Sedgwick Ave Display,Arial, Helvetica, sans-serif
+    
+}
+footer p a:hover{
+    background-color: #393a34;
+    color: #D4AC0D;
+    text-decoration: underline;
+}
+.social_logo{
+    width: 100px;
+}
+.two_section{
+    font-size: 1.5em;
+    display: block;
+    justify-items: center;
+}
+.Name_section{
+    font-size: 2em;
 }
